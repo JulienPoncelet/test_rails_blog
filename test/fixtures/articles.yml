@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: ''
+  text: 'Text for nill title'
+
+two:
+  title: 'abc'
+  text: 'Text for < 5 title'
+
+three:
+    title: 'valid title'
+    text: 'Text for valid title'
