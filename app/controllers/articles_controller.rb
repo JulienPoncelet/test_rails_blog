@@ -28,7 +28,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def update
-	  @article = Article.find(params[:id])
+		@article = Article.find(params[:id])
 		if @article.update(article_params)
 			redirect_to @article
 		else
@@ -42,9 +42,8 @@ class ArticlesController < ApplicationController
 		redirect_to articles_path
 	end
 
-	private
-		def article_params
-			params.require(:article).permit(:title, :text)
-		end
-
+private
+	def article_params
+		params.require(:article).permit(:title, :text)
+	end
 end
